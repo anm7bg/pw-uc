@@ -35,7 +35,7 @@ const HomeUC = () => {
                 </h1 >
                 <p className='price'>Качество и коректност на добра цена.</p>
                 <p className='tracking-widest text-xs text-center text-blue-100 max-w-80'>
-                    Copyright © 2014 - 2024 nsite2014@gmail.com
+                    Copyright © 2014 - 2024 powwebs@gmail.com
                 </p >
             </div>
         </div>
