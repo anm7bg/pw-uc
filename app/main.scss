@@ -7,7 +7,7 @@ body {
   .top-logo {
     position: relative;
     top: -473px;
-    left: 23%;
+    // left: 23%;
   }
   main {
     .h-screen {
@@ -24,7 +24,8 @@ body {
   body {
     .top-logo {
       top: -515px;
-      left: 25%;
+      margin: 0 auto;
+      // left: 25%;
     }
     .logos-container {
       width: 100%;
@@ -32,10 +33,16 @@ body {
         display: block;
       }
       .wp {
+        position: relative;
+        top: -90px;
         margin: 0 auto;
       }
       .react {
-        margin: 0 26%;
+        width: 200px;
+        position: relative;
+        top: -52px;
+        margin: 0 auto;
+        left: auto;
       }
     }
   }

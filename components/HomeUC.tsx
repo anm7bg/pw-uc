@@ -29,8 +29,8 @@ const HomeUC = () => {
                     </div>
                 </div>
                 {/* ------------------------------ */}
+                <img className='top-logo' src="/logo.png" alt="powweb-logo" />
                 <h1 className='uppercase tracking-widest text-xs text-center text-blue-100'>
-                    <img className='top-logo' src="/logo.png" alt="powweb-logo" />
                     SEO | Изработка и поддръжка на уеб сайтове и SPA!
                 </h1 >
                 <p className='price'>Качество и коректност на добра цена.</p>
