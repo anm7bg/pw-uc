@@ -5,17 +5,25 @@
 body {
   overflow: hidden !important;
   .top-logo {
-    position: relative;
-    top: -473px;
+    width: 250px;
+    margin: 0 auto;
+    // position: relative;
+    // top: -473px;
     // left: 23%;
   }
   main {
     .h-screen {
-      height: 340px;
+      height: 250px;
     }
-    .price {
-      padding: 15px 0;
+    .page-title {
+      margin: 10px 0 50px 0;
     }
+    .footer-area {
+      .price {
+        padding: 15px 0;
+      }
+    }
+
   }
 }
 // Mobile
@@ -54,7 +62,7 @@ body {
     width: 48%;
     margin: 0 auto; 
     position: absolute;
-    top: -400px;
+    top: -360px;
     .wp, .react {
       display: inline-block;
     }

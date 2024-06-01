@@ -1,17 +1,21 @@
 // rafce
 import React from 'react'
-import { Spotlight } from './ui/Spotlight'
+import { Spotlight } from '../ui/Spotlight'
+import Footer from '../blocks/Footer'
 
 const HomeUC = () => {
   return (
-    <div className='pb-20 pt-36'>
+    <div className='pb-5 pt-10'>
         <div>
             <Spotlight className='-top-40 -left-10 md:-left-32 md:-top-20
             h-screen' fill='white' />
             <Spotlight className='top-10 left-full h-[80vh] w-[50vw]' fill='purple' />
             <Spotlight className='top-28 left-80 h-[80vh] w-[50vh]' fill='blue' />
         </div>
-
+        <a className='logo-link' href="/"><img className='top-logo' src="/logo.png" alt="powweb-logo" /></a>
+                <h1 className='page-title uppercase tracking-widest text-xs text-center text-blue-100'>
+                    SEO | Изработка и поддръжка на уеб сайтове и SPA!
+                </h1 >
         <div className="h-screen w-full dark:bg-black-100 bg-white  dark:bg-grid-white/[0.3] bg-grid-black/[0.2] relative flex items-center justify-center">
             <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black-100 bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
         </div>
@@ -29,16 +33,11 @@ const HomeUC = () => {
                     </div>
                 </div>
                 {/* ------------------------------ */}
-                <img className='top-logo' src="/logo.png" alt="powweb-logo" />
-                <h1 className='uppercase tracking-widest text-xs text-center text-blue-100'>
-                    SEO | Изработка и поддръжка на уеб сайтове и SPA!
-                </h1 >
+                <ul><li><a href="/instrumenti">Инструменти</a></li></ul>
                 <p className='price'>Качество и коректност на добра цена.</p>
-                <p className='tracking-widest text-xs text-center text-blue-100 max-w-80'>
-                    Copyright © 2014 - 2024 <br/>powwebs@gmail.com
-                </p >
             </div>
         </div>
+        <Footer />
     </div>
 
   )
