@@ -36,7 +36,7 @@ const Tools = () => {
                 </div>
                 {/* ------------------------------ */}
                 <h2>Инструменти:</h2>
-                <ul><li><a href="/">Начало</a></li></ul>
+                <ul className='main-menu'><li><a href="/">Начало</a></li></ul>
                 <p className='price'>Качество и коректност на добра цена.</p>
             </div>
         </div>
