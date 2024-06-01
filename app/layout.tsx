@@ -9,8 +9,6 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "PowWeb - SEO | Изработка и поддръжка на уеб сайтове и SPA!",
   description: "SEO | Изработка и поддръжка на уеб сайтове и SPA! Качество и коректност на добра цена",
-  name: "google-site-verification",
-  content: "zC003dNp0q6M7fePQu48uOtHGBjJ3C8SBi86Qn3vPbw"
 };
 
 export default function RootLayout({
