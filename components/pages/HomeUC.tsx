@@ -33,7 +33,7 @@ const HomeUC = () => {
                     </div>
                 </div>
                 {/* ------------------------------ */}
-                <ul><li><a href="/instrumenti">Инструменти</a></li></ul>
+                <ul className='main-menu'><li><a href="/instrumenti">Инструменти</a></li></ul>
                 <p className='price'>Качество и коректност на добра цена.</p>
             </div>
         </div>

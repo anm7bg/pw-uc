@@ -19,17 +19,27 @@ body {
       margin: 10px 0 50px 0;
     }
     .footer-area {
+      padding-top: 55px;
+      width: 320px;
+      margin: 0 auto;
       .price {
         padding: 15px 0;
       }
     }
-
+    ul.main-menu {
+      margin: 0.3rem auto;
+    }
   }
 }
 // Mobile
 
 @media only screen and (max-width: 650px) {
   body {
+    main {
+      .footer-area {
+        padding-top: 0;
+      }
+    }
     .top-logo {
       top: -515px;
       margin: 0 auto;
@@ -48,10 +58,13 @@ body {
       .react {
         width: 200px;
         position: relative;
-        top: -52px;
+        top: -88px;
         margin: 0 auto;
         left: auto;
       }
+    }
+    ul.main-menu {
+      margin: 1.1rem auto;
     }
   }
 }
