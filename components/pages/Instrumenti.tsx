@@ -2,6 +2,7 @@
 import React from 'react'
 import { Spotlight } from '../ui/Spotlight'
 import Footer from '../blocks/Footer'
+import Link from 'next/link'
 
 const Tools = () => {
   return (
@@ -13,7 +14,7 @@ const Tools = () => {
             <Spotlight className='top-28 left-80 h-[80vh] w-[50vh]' fill='blue' />
         </div>
 
-        <a className='logo-link' href="/"><img className='top-logo' src="/logo.png" alt="powweb-logo" /></a>
+        <Link className='logo-link' href="/"><img className='top-logo' src="/logo.png" alt="powweb-logo" /></Link>
         <h1 className='page-title uppercase tracking-widest text-xs text-center text-blue-100'>
             SEO | Изработка и поддръжка на уеб сайтове и SPA!
         </h1 >
@@ -36,7 +37,7 @@ const Tools = () => {
                 </div>
                 {/* ------------------------------ */}
                 <h2>Инструменти:</h2>
-                <ul className='main-menu'><li><a href="/">Начало</a></li></ul>
+                <ul className='main-menu'><li><Link href="/">Начало</Link></li></ul>
                 <p className='price'>Качество и коректност на добра цена.</p>
             </div>
         </div>
