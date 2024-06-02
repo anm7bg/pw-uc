@@ -1,4 +1,4 @@
-import HomeUC from "@/components/pages/HomeUC";
+import HomeUC from "@/pages/HomeUC";
 import Image from "next/image";
 
 // export const runtime = "edge";

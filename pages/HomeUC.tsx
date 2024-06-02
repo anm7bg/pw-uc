@@ -1,12 +1,13 @@
 // rafce
 import React from 'react'
-import { Spotlight } from '../ui/Spotlight'
-import Footer from '../blocks/Footer'
+import { Spotlight } from '../components/ui/Spotlight'
+import Footer from '../components/blocks/Footer'
 import Link from 'next/link'
+import Image from 'next/image'
 
-const Tools = () => {
+const HomeUC = () => {
   return (
-    <div className='pb-20 pt-10'>
+    <div className='pb-5 pt-10'>
         <div>
             <Spotlight className='-top-40 -left-10 md:-left-32 md:-top-20
             h-screen' fill='white' />
@@ -14,7 +15,7 @@ const Tools = () => {
             <Spotlight className='top-28 left-80 h-[80vh] w-[50vh]' fill='blue' />
         </div>
 
-        <Link className='logo-link' href="/"><img className='top-logo' src="/logo.png" alt="powweb-logo" /></Link>
+        <Link className='logo-link' href="/"><Image className='top-logo' src="/logo.png" width={250} height={60} alt="powweb-logo" /></Link>
         <h1 className='page-title uppercase tracking-widest text-xs text-center text-blue-100'>
             SEO | Изработка и поддръжка на уеб сайтове и SPA!
         </h1 >
@@ -27,7 +28,7 @@ const Tools = () => {
                 {/* React Logo  */}
                 <div className="logos-container">
                     <div className='wp'>
-                        <img src="WordPress-500.png" alt="WordPress" />
+                        <Image src="/WordPress-500.png" width={500} height={500} alt="WordPress" />
                     </div>
                     <div className="react">
                         <span className="react-logo">
@@ -36,8 +37,7 @@ const Tools = () => {
                     </div>
                 </div>
                 {/* ------------------------------ */}
-                <h2>Инструменти:</h2>
-                <ul className='main-menu'><li><Link href="/">Начало</Link></li></ul>
+                <ul className='main-menu'><li><Link href="/instrumenti">Инструменти</Link></li></ul>
                 <p className='price'>Качество и коректност на добра цена.</p>
             </div>
         </div>
@@ -47,4 +47,5 @@ const Tools = () => {
   )
 }
 
-export default Tools
+export default HomeUC
+

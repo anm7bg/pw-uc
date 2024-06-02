@@ -1,5 +1,5 @@
-import HomeUC from "@/components/pages/HomeUC";
-import Tools from "@/components/pages/Instrumenti";
+import HomeUC from "@/pages/HomeUC";
+import Tools from "@/pages/Instrumenti";
 import Image from "next/image";
 
 // export const runtime = "edge";
