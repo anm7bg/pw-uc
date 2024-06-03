@@ -1,3 +1,4 @@
+import { GoogleAnalytics, GoogleTagManager } from '@next/third-parties/google'
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 // import "./globals.css";
@@ -30,6 +31,7 @@ export default function RootLayout({
           {children}
         </ThemeProvider>
       </body>
+      <GoogleTagManager gtmId="UA-55220452-12" /> // METRIC ID
     </html>
   );
 }
