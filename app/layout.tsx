@@ -31,7 +31,7 @@ export default function RootLayout({
           {children}
         </ThemeProvider>
       </body>
-      <GoogleTagManager gtmId="UA-55220452-12" />
+      <GoogleAnalytics gaId="UA-55220452-12" />
     </html>
   );
 }
