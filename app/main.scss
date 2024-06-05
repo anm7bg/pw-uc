@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  overflow: hidden !important;
+  // overflow: hidden !important;
   .top-logo {
     width: 250px;
     margin: 0 auto;
@@ -19,7 +19,7 @@ body {
       margin: 10px 0 50px 0;
     }
     .footer-area {
-      padding-top: 55px;
+      // padding-top: 55px;
       width: 320px;
       margin: 0 auto;
       .price {
@@ -28,6 +28,12 @@ body {
     }
     ul.main-menu {
       margin: 0.3rem auto;
+      li, svg {
+        display: inline-block;
+      }
+      li {
+        margin: 10px;
+      }
     }
   }
 }

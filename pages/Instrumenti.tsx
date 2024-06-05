@@ -5,10 +5,11 @@ import Footer from '../components/blocks/Footer'
 import Link from 'next/link'
 import Image from 'next/image'
 import { px } from 'framer-motion'
+import MainMenu from '@/components/ui/MainMenu'
 
 const Tools = () => {
   return (
-    <div className='pb-20 pt-10'>
+    <div className='pb-5 pt-10'>
         <div>
             <Spotlight className='-top-40 -left-10 md:-left-32 md:-top-20
             h-screen' fill='white' />
@@ -24,7 +25,7 @@ const Tools = () => {
         <div className="h-screen w-full dark:bg-black-100 bg-white  dark:bg-grid-white/[0.3] bg-grid-black/[0.2] relative flex items-center justify-center">
             <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black-100 bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
         </div>
-        <div className='flex justify-center relative my-20 z-10'>
+        <div className='flex justify-center relative my-10 z-10'>
             <div className='max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center'>
                 {/* React Logo  */}
                 <div className="logos-container">
@@ -39,8 +40,11 @@ const Tools = () => {
                 </div>
                 {/* ------------------------------ */}
                 <h2>Инструменти:</h2>
-                <ul className='main-menu'><li><Link href="/">Начало</Link></li></ul>
-                <p className='price'>Качество и коректност на добра цена.</p>
+                <div className='tools-content text-center my-3'>
+                    <p>В процес на обновяване!!!</p>
+                </div>
+                <MainMenu />
+                <p className='price my-1'>Качество и коректност на добра цена.</p>
             </div>
         </div>
         <Footer />
