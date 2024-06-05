@@ -9,8 +9,14 @@ import { ThemeProvider } from "@/components/theme-provider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(`https://powweb.bg`),
+
   title: "PowWeb - SEO | Изработка и поддръжка на уеб сайтове и SPA!",
   description: "SEO | Изработка и поддръжка на уеб сайтове и SPA! Качество и коректност на добра цена",
+    alternates: {
+        canonical: './',
+    }
+
 };
 
 export default function RootLayout({
