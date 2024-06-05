@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: '/private/',
     },
-    sitemap: 'https://powweb.bg/sitemap.xml',
+    sitemap: 'https://powweb.bg/index-sitemap.xml',
   }
 }
