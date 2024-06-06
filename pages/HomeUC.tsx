@@ -5,6 +5,7 @@ import Footer from '../components/blocks/Footer'
 import Link from 'next/link'
 import Image from 'next/image'
 import MainMenu from '@/components/ui/MainMenu'
+import HomeContent from '@/components/ui/HomeContent'
 
 const HomeUC = () => {
   return (
@@ -38,8 +39,10 @@ const HomeUC = () => {
                     </div>
                 </div>
                 {/* ------------------------------ */}
+                <HomeContent />
                 <MainMenu />
-                <p className='price'>Качество и коректност на добра цена.</p>
+                {/* <p className='price'>Качество и коректност на добра цена.</p> */}
+                <p className="price"><strong>Професионално инсталиране, конфигуриране, оптимизиране, поддръжка и SEO, за сайтове, електронни магазини и SPA. React / Next js И WordPress</strong> на достъпни цени!</p>
             </div>
         </div>
         <Footer />

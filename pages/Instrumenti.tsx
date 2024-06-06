@@ -40,7 +40,7 @@ const Tools = () => {
                 </div>
                 {/* ------------------------------ */}
                 <h2 className='sub-title'>Инструменти:</h2>
-                <div className='tools-content text-center my-3'>
+                <div className='tools-content content text-center my-3'>
                     <p>В процес на обновяване!!!</p>
                 </div>
                 <MainMenu />
