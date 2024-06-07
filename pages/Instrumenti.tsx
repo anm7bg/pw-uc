@@ -44,7 +44,7 @@ const Tools = () => {
                     <p>В процес на обновяване!!!</p>
                 </div>
                 <MainMenu />
-                <p className='price my-1'>Качество и коректност на добра цена.</p>
+                <p className="price text-center"><strong>Професионално инсталиране, конфигуриране, оптимизиране, поддръжка и SEO, за сайтове, електронни магазини и SPA. React / Next js И WordPress</strong> на достъпни цени!</p>
             </div>
         </div>
         <Footer />
