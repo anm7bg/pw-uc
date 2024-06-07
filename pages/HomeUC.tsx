@@ -42,7 +42,7 @@ const HomeUC = () => {
                 <HomeContent />
                 <MainMenu />
                 {/* <p className='price'>Качество и коректност на добра цена.</p> */}
-                <p className="price"><strong>Професионално инсталиране, конфигуриране, оптимизиране, поддръжка и SEO, за сайтове, електронни магазини и SPA. React / Next js И WordPress</strong> на достъпни цени!</p>
+                <p className="price text-center"><strong>Професионално инсталиране, конфигуриране, оптимизиране, поддръжка и SEO, за сайтове, електронни магазини и SPA. React / Next js И WordPress</strong> на достъпни цени!</p>
             </div>
         </div>
         <Footer />
