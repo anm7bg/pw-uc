@@ -1,10 +1,10 @@
-import { GoogleAnalytics, GoogleTagManager } from '@next/third-parties/google'
+import { GoogleAnalytics } from '@next/third-parties/google'
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 // import "./globals.css";
 import "./main.scss";
-import { ThemeProvider } from "@/components/theme-provider";
-// import GoogleAnalytics from '@/components/GoogleAnalytics';
+import { ThemeProvider } from "@/app/components/theme-provider";
+import { Spotlight } from '@/components/ui/Spotlight';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -28,6 +28,7 @@ export default function RootLayout({
     <html lang="en">
       {/* <GoogleAnalytics /> */}
       <body className={inter.className}>
+
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"

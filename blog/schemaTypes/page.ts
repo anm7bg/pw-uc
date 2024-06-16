@@ -22,6 +22,9 @@ export const page = defineType({
       title: "Page sections",
       of: [
         defineArrayMember({
+          type: "post",
+        }),
+        defineArrayMember({
           type: "heroBlock",
         }),
         defineArrayMember({

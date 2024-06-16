@@ -4,6 +4,11 @@ export const textBlock = defineType({
   type: "object",
   name: "textBlock",
   fields: [
+    {
+    name: "slug",
+    type: "slug",
+    title: "Slug of blog"
+    },
     defineField({
       type: "string",
       name: "title",

@@ -5,7 +5,8 @@ export default function robots(): MetadataRoute.Robots {
     rules: {
       userAgent: '*',
       allow: '/',
-      disallow: '/private/',
+      disallow: ['/private/', '/grid/'],
+      // disallow: '/grid/',
     },
     sitemap: 'https://powweb.bg/index-sitemap.xml',
   }
