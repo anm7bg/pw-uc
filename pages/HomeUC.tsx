@@ -50,7 +50,8 @@ const HomeUC = () => {
                     </Link>*/}
                 </div>
                 <TextGenerateEffect
-                    className='text-center text-[1.3rem] md:text-2xl lg:text-1xl'
+                    className='home-text-generate-effect text-center text-[1.5rem]'
+                    // className='text-center text-[1rem] md:text-2xl lg:text-1xl'
                     words='Професионално инсталиране, конфигуриране, оптимизиране, поддръжка и SEO, за сайтове, електронни магазини и SPA. React / Next js И WordPress на достъпни цени!'
                 />
                 <HomeContent />
