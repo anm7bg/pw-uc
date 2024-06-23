@@ -16,7 +16,7 @@ const Tools = () => {
         <Header />
         <section className='globe-home'>
           <GridGlobe />
-          <div className='flex justify-center mb-10 z-10'>
+          <div className='content flex justify-center mb-10 z-10'>
                 <div className='max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center'>
                     {/* <div className="logos-container">
                         <div className='wp'>
@@ -29,7 +29,8 @@ const Tools = () => {
                         </div>
                     </div> */}
                     <TextGenerateEffect
-                        className='text-center text-[1.3rem] md:text-2xl lg:text-1xl'
+                        className='text-generate-effect text-center text-[1.5rem]'
+                        // className='text-center text-[1rem] md:text-2xl lg:text-1xl'
                         words='Професионално инсталиране, конфигуриране, оптимизиране, поддръжка и SEO, за сайтове, електронни магазини и SPA. React / Next js И WordPress на достъпни цени!'
                     />
                     <h2 className='sub-title text-[1.3rem] md:text-2xl lg:text-1xl'>Инструменти:</h2>
