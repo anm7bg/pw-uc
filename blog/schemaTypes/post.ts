@@ -56,6 +56,11 @@ export default defineType({
       title: 'Body',
       type: 'blockContent',
     }),
+    defineField({
+      name: 'shortDesc',
+      title: 'Short Desc',
+      type: 'text',
+    }),
   ],
 
   preview: {

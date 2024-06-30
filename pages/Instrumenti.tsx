@@ -12,7 +12,7 @@ import { TextGenerateEffect } from '@/components/ui/TextGenerateEffect'
 
 const Tools = () => {
   return (
-    <article className='pb-5 pt-10'>
+    <article className='pt-10'>
         <Header />
         <section className='globe-home'>
           <GridGlobe />

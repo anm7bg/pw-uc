@@ -1,30 +1,67 @@
 
+import { dataCard } from '@/app/lib/interface';
 import { client } from '@/app/lib/sanity'
+import Header from '@/components/Header';
+import { ModeToggle } from '@/components/ModeToggle';
+import {Card, CardHeader, CardBody, CardFooter} from "@nextui-org/card";
+import { urlForImage } from '@/sanity/lib/image';
+import Image from 'next/image';
+import { Button } from '@/components/ui/button';
+import Link from 'next/link';
+import Footer from '@/components/Footer';
+
 
 async function getData() {
-    const query = `*[_type == 'category']`;
+    const query = `*[_type == 'post'] {
+        title, 
+        mainImage,
+        'postSlug': slug.current,
+        categories,
+        shortDesc,
+        body
+      }`
+
     const data = await client.fetch(query);
 
     return data;
 }
 
-// export const runtime = "edge";
+// export const runtime = "experimental-edge";
 
 
-export default function Blog() {
+export default async function Blog() {
 
-    // const data = await getData();
+    const data: dataCard[] = await getData();
 
+    // console.log("data")
     // console.log(data)
     return  (
-        <main className="relative bg-black-100 flex justify-center items-center
-        flex-col overflow-hidden mx-auto sm:px-10 px-5"> 
-            <div className="max-w-7xl w-full"> 
-                {/* {data.map((post, idx) => (
-                    
-                ))} */}
-                    {/* <h1>{ data[0].title }</h1>    */}
-            </div>
-        </main>
+        <article className='blog-posts pt-10'>
+            <Header />
+            <section className='grid grid-cols-1 lg:grid-cols-3 my-[40px] gap-5'>
+                {data.map((post, idx) => (
+                    <Card key={idx}>
+                        <Image 
+                            src={urlForImage(post.mainImage)} 
+                            alt="image" 
+                            width={600} 
+                            height={400}
+                            className='rounded-t-lg object-cover'
+                        />
+                        <CardHeader className='mt-5'>
+                            <h3 className='text-lg line-clamp-2'>{post.title}</h3>
+                        </CardHeader>
+                        <CardBody>
+                            <p className='line-clamp-2 text-sm mt-5'>{post.shortDesc}</p>
+                        </CardBody>
+                        <CardFooter>
+                            <Button asChild className='w-full mt7'>
+                                <Link href={`/post/${post.postSlug}`}>Виж</Link>
+                            </Button>
+                        </CardFooter>
+                    </Card>
+                ))}
+            </section>
+        </article>
     );
 }

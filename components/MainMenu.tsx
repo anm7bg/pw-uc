@@ -9,7 +9,7 @@ const MainMenu = () => {
     <ul className='main-menu'>
         <li><Link href="/"><FaHome /> Начало</Link></li>
         <li><Link href="/instrumenti"><BsTools /> Инструменти</Link></li>
-        <li><Link href="#"><ImBlog /> Публикации</Link></li>
+        <li><Link href="/blog"><ImBlog /> Публикации</Link></li>
     </ul>
   )
 }

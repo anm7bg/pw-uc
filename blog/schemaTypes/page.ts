@@ -17,6 +17,12 @@ export const page = defineType({
       },
     }),
     defineField({
+      name: 'categories',
+      title: 'Categories',
+      type: 'array',
+      of: [{type: 'reference', to: {type: 'category'}}],
+    }),
+    defineField({
       type: "array",
       name: "sections",
       title: "Page sections",

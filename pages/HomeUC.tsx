@@ -19,7 +19,7 @@ import Header from '@/components/Header';
 
 const HomeUC = () => {
   return (
-    <article className='pb-5 pt-10'>
+    <article className='pt-10'>
         <Header />
         <section className='globe-home'>
           <GridGlobe />
@@ -38,7 +38,7 @@ const HomeUC = () => {
                     </div>
                 </div> */}
                 {/* ------------------------------ */}
-                <div>
+                {/* <div> */}
                 {/* <Link 
                         href="#"
                     >
@@ -48,7 +48,7 @@ const HomeUC = () => {
                         position="right"
                     />
                     </Link>*/}
-                </div>
+                {/* </div> */}
                 <TextGenerateEffect
                     className='text-generate-effect text-center text-[1.5rem]'
                     // className='text-center text-[1rem] md:text-2xl lg:text-1xl'
