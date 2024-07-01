@@ -4,7 +4,7 @@ import { client } from '@/app/lib/sanity'
 import Header from '@/components/Header';
 import { ModeToggle } from '@/components/ModeToggle';
 import {Card, CardHeader, CardBody, CardFooter} from "@nextui-org/card";
-import { urlForImage } from '@/sanity/lib/image';
+import { urlForImage } from '@/powweb-blog/lib/image';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';

@@ -2,7 +2,7 @@ import { postCard } from "@/app/lib/interface";
 import { client } from "@/app/lib/sanity";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import { urlForImage } from "@/sanity/lib/image";
+import { urlForImage } from "@/powweb-blog/lib/image";
 import { PortableText } from "next-sanity";
 import Image from "next/image";
 

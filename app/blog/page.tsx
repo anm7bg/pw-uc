@@ -1,4 +1,4 @@
-// 'use client';
+'use client';
 
 import { ModeToggle } from "@/components/ModeToggle";
 import Blog from "@/pages/Blog";
@@ -22,9 +22,11 @@ export default function BlogContent() {
           >
             {children}
           </ThemeProvider> */}
+          <p>Under Construction!!!</p>
           <Blog />
         </main>
         <Footer />
+        {/* <p>Foot</p> */}
       </div>
     );
 }

@@ -1,8 +1,8 @@
 import { createClient } from "next-sanity";
-import { projectId } from "@/sanity/env";
+import { projectId } from "@/powweb-blog/env";
 
 export const client = createClient ({
-    apiVersion: "v2022-03-07",
+    apiVersion: "2022-03-07",
     dataset: "production",
     projectId,
     useCdn:  false
