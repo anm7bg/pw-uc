@@ -1,5 +1,5 @@
 
-import { dataCard } from '@/app/lib/interface';
+import { blogCard } from '@/app/lib/interface';
 import { client } from '@/app/lib/sanity'
 import Header from '@/components/Header';
 import { ModeToggle } from '@/components/ModeToggle';
@@ -26,12 +26,12 @@ async function getData() {
     return data;
 }
 
-// export const runtime = "experimental-edge";
+export const runtime = "experimental-edge";
 
 
-export default async function Blog() {
+export default async function BlogPosts() {
 
-    const data: dataCard[] = await getData();
+    const data: blogCard[] = await getData();
 
     // console.log("data")
     // console.log(data)

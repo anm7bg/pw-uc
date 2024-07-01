@@ -1,4 +1,4 @@
-import { dataCard } from "@/app/lib/interface";
+import { postCard } from "@/app/lib/interface";
 import { client } from "@/app/lib/sanity";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
@@ -23,7 +23,7 @@ async function getData(slug: string) {
 // export const runtime = "edge";
 
 export default async function BlogArticle({params} : {params : {slug: string}}) {
-    const data: dataCard = await getData(params.slug);
+    const data: postCard = await getData(params.slug);
 
     // console.log(data.body);
     
