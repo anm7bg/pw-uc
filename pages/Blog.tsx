@@ -29,7 +29,7 @@ async function getData() {
 export const runtime = "experimental-edge";
 
 
-export default async function BlogPosts() {
+export default async function Blog() {
 
     const data: blogCard[] = await getData();
 
