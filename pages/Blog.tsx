@@ -33,8 +33,8 @@ export default async function Blog() {
 
     const data: blogCard[] = await getData();
 
-    // console.log("data")
-    // console.log(data)
+    console.log("data")
+    console.log(data)
     return  (
         <article className='blog-posts pt-10'>
             <Header />
