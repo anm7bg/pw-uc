@@ -8,8 +8,8 @@ import Image from 'next/image'
 
 const navItems = [
   { name: "Начало", link: "/"},
-  { name: "Инструменти", link: "/instrumenti" },
   { name: "Публикации", link: "/blog" },
+  { name: "Инструменти", link: "/instrumenti" },
 ];
 
 const Header = () => {
