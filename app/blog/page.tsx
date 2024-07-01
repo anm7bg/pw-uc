@@ -1,4 +1,4 @@
-'use client';
+// 'use client';
 
 import { ModeToggle } from "@/components/ModeToggle";
 import Blog from "@/pages/Blog";
@@ -7,7 +7,7 @@ import { HeadManagerContext } from "next/dist/server/future/route-modules/app-pa
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-// export const runtime = "experimental-edge";
+export const runtime = "experimental-edge";
 
 export default function BlogContent() {
     return  (
