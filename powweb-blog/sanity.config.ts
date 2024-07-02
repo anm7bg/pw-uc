@@ -3,13 +3,14 @@ import {structureTool} from 'sanity/structure'
 import {visionTool} from '@sanity/vision'
 import {schemaTypes} from './schemaTypes'
 import { projectId } from './env'
+import { dataset } from './env'
 
 export default defineConfig({
   name: 'default',
   title: 'Powweb blog',
 
   projectId,
-  dataset: 'production',
+  dataset,
 
 
   plugins: [structureTool(), visionTool()],
