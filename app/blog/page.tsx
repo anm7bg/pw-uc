@@ -22,7 +22,7 @@ export default function BlogContent() {
           >
             {children}
           </ThemeProvider> */}
-          <p>Under Construction!!!</p>
+          {/* <p>Under Construction!!!</p> */}
           <Blog />
         </main>
         <Footer />
