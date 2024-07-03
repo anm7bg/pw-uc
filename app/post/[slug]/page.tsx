@@ -30,9 +30,9 @@ export default async function BlogArticle({params} : {params : {slug: string}}) 
 
     return (
         <div>
-        <main className="relative bg-black-100 flex justify-center items-center
+        <main className=" relative bg-black-100 flex justify-center items-center
         flex-col overflow-hidden mx-auto"> 
-            <article className='blog-posts pt-10'>
+            <article className='blog-posts mt-10 pt-10'>
                 <Header />
                     <section className='post-home px-5'>
                         <div className='post-content flex flex-col items-center justify-center mb-10 z-10'>

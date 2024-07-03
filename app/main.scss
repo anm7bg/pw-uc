@@ -59,6 +59,12 @@ body {
       }
     }
     .post-content {
+      h2 {
+        font-size: 1.35rem;
+      }
+      h3, h4 {
+        font-size: 1.3rem;
+      }
       .content-body {
         p, li, a, span {
           font-size: 1.25rem;
@@ -91,8 +97,15 @@ body {
 // Dekstop
 
 @media only screen and (min-width: 770px) {
-  .show-mobile {
-    display: none;
+  body {
+    main {
+      .show-mobile {
+        display: none;
+      }
+      .blog-posts {
+        padding: 0 10%;
+      }
+    }
   }
 }
 
@@ -124,7 +137,7 @@ body {
       .blog-posts {
         .show-mobile {
           position: relative;
-          top: 100px;
+          top: 120px;
         }
         .page-title {
           margin-top: 140px;

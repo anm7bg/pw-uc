@@ -36,9 +36,9 @@ export default async function Blog() {
     console.log("data")
     console.log(data)
     return  (
-        <article className='blog-posts pt-10'>
+        <article className='blog-posts mt-10 pt-10'>
             <Header />
-            <section className='grid grid-cols-1 lg:grid-cols-3 my-[40px] gap-5'>
+            <section className='grid grid-cols-1 lg:grid-cols-4 my-[40px] gap-5'>
                 {data.map((post, idx) => (
                     <Card key={idx}>
                         <Image 
