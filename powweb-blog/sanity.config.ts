@@ -4,6 +4,7 @@ import {visionTool} from '@sanity/vision'
 import {schemaTypes} from './schemaTypes'
 import { projectId } from './env'
 import { dataset } from './env'
+import { apiVersion } from './env'
 
 export default defineConfig({
   name: 'default',
@@ -11,6 +12,7 @@ export default defineConfig({
 
   projectId,
   dataset,
+  apiVersion,
 
 
   plugins: [structureTool(), visionTool()],
