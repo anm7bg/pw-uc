@@ -20,7 +20,7 @@ async function getData(slug: string) {
     return data;
 }
 
-// export const runtime = "edge";
+export const runtime = "experimental-edge";
 
 export default async function BlogArticle({params} : {params : {slug: string}}) {
     const data: postCard = await getData(params.slug);
