@@ -1,5 +1,5 @@
 import { postCard } from "@/app/lib/interface";
-import { client } from "@/app/lib/sanity";
+import { client } from "@/powweb-blog/lib/client";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import { urlForImage } from "@/powweb-blog/lib/image";
