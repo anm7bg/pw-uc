@@ -15,7 +15,14 @@ export default defineConfig({
   apiVersion,
 
 
-  plugins: [structureTool(), visionTool()],
+  plugins: [structureTool(
+    {
+      structure: (S, context) => {
+        console.log(context) // returns { currentUser, dataset, projectId, schema, getClient, documentStore }
+        return S.documentTypeList('post')
+      },
+    }
+  ), visionTool()],
 
   schema: {
     types: schemaTypes,
