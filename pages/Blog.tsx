@@ -40,7 +40,7 @@ export default async function Blog() {
             <Header />
             <section className='grid grid-cols-1 lg:grid-cols-4 my-[40px] gap-5'>
                 {data.map((post, idx) => (
-                    <Card key={idx}>
+                    <Card className='mb-[20px]' key={idx}>
                         <Image 
                             src={urlForImage(post.mainImage)} 
                             alt="image" 
@@ -48,11 +48,11 @@ export default async function Blog() {
                             height={400}
                             className='rounded-t-lg object-cover'
                         />
-                        <CardHeader className='mt-5'>
-                            <h3 className='text-lg line-clamp-2'>{post.title}</h3>
+                        <CardHeader className='py-[5px] my-[5px] blog-card-head'>
+                            <h3 className='text-center text-lg line-clamp-2'>{post.title}</h3>
                         </CardHeader>
-                        <CardBody>
-                            <p className='line-clamp-2 text-sm mt-5'>{post.shortDesc}</p>
+                        <CardBody className='p-[5px]'>
+                            <p className='line-clamp-2 text-sm'>{post.shortDesc}</p>
                         </CardBody>
                         <CardFooter>
                             <Button asChild className='w-full mt7'>
