@@ -18,7 +18,7 @@ const Header = () => {
     <div className='header-area max-w-7xl mx-auto'>
         <Link className='main-logo show-dekstop' href="/"><Image className='top-logo' src="/logo.png" width={250} height={60} alt="powweb-logo" /></Link>
         <FloatingNav className='main-nav' navItems={navItems} />
-        <Link className='main-logo show-mobile' href="/"><Image className='top-logo' src="/logo.png" width={250} height={60} alt="powweb-logo" /></Link>
+        <Link className='main-logo show-mobile z-1' href="/"><Image className='top-logo' src="/logo.png" width={250} height={60} alt="powweb-logo" /></Link>
         <h1 className='page-title uppercase mt-[4.5rem] tracking-widest text-[1.1rem] text-center text-blue-100'>
             SEO | Изработка и поддръжка на уеб сайтове и SPA!
         </h1 >

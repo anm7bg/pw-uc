@@ -117,10 +117,14 @@ body {
       display: none;
     }
     .show-mobile {
+      z-index: 11;
       position: relative;
-      top: 425px;
+      top: 450px;
     }
     main {
+      .globe-wrap-center {
+        left: 25%;
+      }
       // .page-title {
         // font-size: 0.6rem;
       // }
