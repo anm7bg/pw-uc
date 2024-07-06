@@ -1,6 +1,6 @@
 
 import { blogCard } from '@/app/lib/interface';
-import { client } from '@/powweb-blog/lib/client'
+import { client } from '@/app/lib/sanity'
 import Header from '@/components/Header';
 import { ModeToggle } from '@/components/ModeToggle';
 import {Card, CardHeader, CardBody, CardFooter} from "@nextui-org/card";
