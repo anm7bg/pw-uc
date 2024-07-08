@@ -1,20 +1,15 @@
-// console.log('process.env')
-// console.log(process.env.SANITY_STUDIO_DATASET)
-// console.log(process.env.NEXT_PUBLIC_SANITY_DATASET)
+
 
 export const apiVersion =
-  process.env.SANITY_STUDIO_API_VERSION || '2022-03-07'
+  process.env.SANITY_STUDIO_API_VERSION
 
 export const dataset = assertValue(
-  process.env.SANITY_STUDIO_DATASET || 'production',
+  process.env.SANITY_STUDIO_DATASET,
   'Missing environment variable: SANITY_DATASET'
 )
 
-// console.log("dataset")
-// console.log(process.env.test)
-
 export const projectId = assertValue(
-  process.env.SANITY_STUDIO_PROJECT_ID || 'n2yj5q5m',
+  process.env.SANITY_STUDIO_PROJECT_ID,
   'Missing environment variable: SANITY_PROJECT_ID'
 )
 
